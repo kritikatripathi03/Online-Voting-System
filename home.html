@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style/style1.css">
+</head>
+<body>
+    <header>
+        <h1 >Online Voting System</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>       
+    </nav>
+    <main>
+        <section>
+            <!--Save form data into CSV file using python-->
+            <form class = "inputBox" action="save_data.py" method="POST">
+                <h2>Sign Up</h2>
+                <div class="inputBox">
+                    <label class = "label">Name: </label>
+                    <input class = "box" type="text" name="name" required="">
+                </div>
+                <div class="inputBox">
+                    <label class = "label">Aadhaar Card No.: </label>
+                    <input class = "box" type="text" name="aadhaar" required="">
+                    
+                </div>
+                <div class="inputBox">
+                    <label class = "label">Password: </label>
+                    <input class = "box" type="text" name="password" required="">
+                    
+                </div>
+                <div class="inputBox">
+                    <label class = "label">Confirm Password: </label>
+                    <input class = "box" type="text" name="confirm_password" required="">
+                    
+                </div>
+                <br>
+                <input type="submit" name="" value="Sign Up">            
+            <!--Make a button to redirect to vote_now.html-->
+            <input type="button" value="Vote Now!" onclick="window.location.href='vote_now.html'">
+            <!--<h1>Enter your Registration Details</h1>
+            <table>
+             <tbody>
+                 <tr>
+                     <td><h3>Name: *</h3></td>
+                     <td><input type="text" name="name" required></td>
+                 </tr>
+                 <tr>
+                    <td><h3>Aadhaar Number: *</h3></td>
+                    <td><input type="text" name="aadhaar no" required></td>
+                </tr>
+                <tr>
+                    <td><h3>Password: *</h3></td>
+                    <td><input type="text" name="password" required></td>
+                    
+                </tr>
+             </tbody>
+             </table>
+             <input type="submit" value="Submit" href = "voting.html">
+             </section>-->
+
+    </main>
+</body>
+</html>

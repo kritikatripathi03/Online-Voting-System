@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="style/style1.css">
+</head>
+<body>
+    <header>
+        <h1 >Online Voting System</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>        
+    </nav>
+    <main>
+        <section>
+            <h1>Choose Your Party</h1>
+            <!--Make a drop down menu-->
+            <select name="party" id="party">
+                <option value="BJP">BJP</option>
+                <option value="Congress">Congress</option>
+                <option value="AAP">AAP</option>
+                <option value="Shiv Sena">Shiv Sena</option>
+                <option value="BSP">BSP</option>
+                <option value="TMC">TMC</option>
+                <option value="DMK">DMK</option>
+                <option value="YSRCP">YSRCP</option>
+                <option value="JDU">JDU</option>
+                <option value="NCP">NCP</option>
+                <option value="RJD">RJD</option>
+                <option value="JD(S)">JD(S)</option>
+                <option value="TRS">TRS</option>
+                <option value="LJP">LJP</option>
+                <option value="AIMIM">AIMIM</option>
+                <option value="BSP">BSP</option>
+                <option value="CPM">CPM</option>
+                <option value="JMM">JMM</option>
+                <option value="NPP">NPP</option>
+                <option value="RSP">RSP</option>
+                <option value="SAD">SAD</option>
+                <option value="SP">SP</option>
+                <option value="VCK">VCK</option>
+                <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+
+                <form action = "http://localhost:5000/upload" method = "POST" enctype = "multipart/form-data">
+                    <!--write a bold text-->
+                    <h2>Select your fingerprint image:</h2>             
+                <!--Make a submit button-->
+                <input type = "file" name = "file" /> 
+            </form>
+            <br>
+            <!--Make a button that redirects to thank_you.html the color is  and is big in size-->
+            <button class = "button" size="" type="button" onclick="window.location.href='thank_you.html'">Submit</button>
+
+             </section>
+
+    </main>
+</body>
+</html>
